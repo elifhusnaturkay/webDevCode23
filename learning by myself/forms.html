@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <!-- formlardaki işte email tarzı girişleri <form> açıp içinden <input> ile alıyoruz -->
+   <!-- formdaki bölmeyi zorunlu hale getimek için "required" ekle sonuna -->
+   <!-- "placeholder" o istenen kutucuğun içinde yazılmak isteneni yazar -->
+   
+   <form action="/learning by myself/">
+      E-mail <input type="email" name="email">
+      <p>
+         İsim Soyisim <input type="text" name="isimSoyisim" placeholder="isim soy isim giriniz." required>
+         <input type="button" value="giriş yapınız" name="girişbutonu" >
+      </p>
+      
+      <p>
+         Şifre <input type="password" name="pwd">
+      </p>
+      <p>
+         Beni Hatırla <input type="checkbox" name="beniHatırla">
+      </p>
+
+      <p>
+         Kadın <input type="radio" name="cinsiyet">
+         Erkek <input type="radio" name="cinsiyet">
+      </p>
+
+      <p>
+         <select name="şehirler">
+            <option>Elazığ</option>
+            <option>İstanbul</option>
+            <option>Balıkesir</option>
+            <option>Rize</option>
+         </select>
+      </p>
+
+      <p>
+         <select multiple name="şehirler1">
+            <option>Elazığ</option>
+            <option>İstanbul</option>
+            <option>Balıkesir</option>
+            <option>Rize</option>
+         </select>
+      </p>
+
+      <p>
+         <input type="submit" name="kaydet">
+      </p>
+   </form>
+</body>
+</html>
